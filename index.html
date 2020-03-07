@@ -77,27 +77,27 @@
 
         <div class="pros-box">
           <div class="pros">
-            <img src="./assets/img/experienced-o.svg" alt="" class="pros__image">
+            <img src="./assets/img/svg/experienced-o.svg" alt="" class="pros__image">
             <span class="pros__text">Опытные мастера</span>
           </div>
           <div class="pros">
-            <img src="./assets/img/flexible-prices-o.svg" alt="" class="pros__image">
+            <img src="./assets/img/svg/flexible-prices-o.svg" alt="" class="pros__image">
             <span class="pros__text">Гибкая ценовая политика</span>
           </div>
           <div class="pros">
-            <img src="./assets/img/free-consult-o.svg" alt="" class="pros__image">
+            <img src="./assets/img/svg/free-consult-o.svg" alt="" class="pros__image">
             <span class="pros__text">Бесплатная консультация</span>
           </div>
           <div class="pros">
-            <img src="./assets/img/safety-o.svg" alt="" class="pros__image">
+            <img src="./assets/img/svg/safety-o.svg" alt="" class="pros__image">
             <span class="pros__text">Безопасность процедур</span>
           </div>
           <div class="pros">
-            <img src="./assets/img/environment-o.svg" alt="" class="pros__image">
+            <img src="./assets/img/svg/environment-o.svg" alt="" class="pros__image">
             <span class="pros__text">Уютная атмосфера</span>
           </div>
           <div class="pros">
-            <img src="./assets/img/quality-o.svg" alt="" class="pros__image">
+            <img src="./assets/img/svg/quality-o.svg" alt="" class="pros__image">
             <span class="pros__text">Качественный результат</span>
           </div>
         </div>
@@ -134,6 +134,68 @@
         </div>
       </section>
       <!-- /.section -->
+
+      <section class="section section-gallery" id="masters">
+        <h2 class="section-title">Галерея</h2>
+      </section>
+      <!-- /#masters.section section-gallery -->
+
+      <section class="section section-video">
+      </section>
+      <!-- /.section section-video -->
+
+      <section class="section section-contacts" id="contacts">
+        <h2 class="section-title">Контакты</h2>
+
+        <div class="contacts">
+          <div class="address-box">
+            <div class="contact-item">
+              <span class="icon-address"></span> 
+              <span class="contact-text">Москва, ул. Бахрушина д.13</span>
+            </div>
+            <div class="contact-item">
+              <iframe src="https://maps.google.com/maps?q=Tatumania/@55.7417384,37.6537206&t=&z=17&ie=UTF8&iwloc=&output=embed" class="mapframe" allowfullscreen></iframe>
+            </div>
+            <div class="contact-item">
+              <span class="icon-phone"></span>
+              <a href="tel:+74956402040" class="contact-text">+7 (495) 640 20 40</a>
+            </div>
+            <div class="contact-item">
+              <span class="icon-mail"></span>
+              <a href="mailto:info@tattooz.ru" class="contact-text">info@tattooz.ru</a>
+            </div>
+            <ul class="contact-item">
+              <li class="contact-social">
+                <a class="contact-text" target="_blank" href="https://www.instagram.com/tattoozru/"><span class="icon-social-ig"></span></a>
+              </li>
+              <li class="contact-social">
+                <a class="contact-text" target="_blank" href="https://vk.com/tattoomania"><span class="icon-social-vk"></span></a>
+              </li>
+              <li class="contact-social">
+                <a class="contact-text" target="_blank" href="https://www.facebook.com/tattooz.ru/"><span class="icon-social-fb"></span></a>
+              </li>
+            </ul>
+            <div class="contact-item">
+              Режим работы:<br> Ежедневно с 10:00 до 22:00
+            </div>
+          </div>
+          <!-- /.address-box -->
+          <form id="frmCallBack" class="contact-form">
+            <h3 class="form-title">
+              Заполните форму прямо сейчас, мы с Вами свяжемся в течение 10 минут
+            </h3>
+            <input required id="frmInName" type="text" class="form-input" placeholder="* Ваше имя">
+            
+            <input required id="frmInPhone" type="tel" class="form-input" placeholder="* Телефон">
+
+            <textarea required id="frmInMessage" class="form-input" placeholder="Комментарии"></textarea>
+            <button type="submit" class="btn-submit">Отправить</button>
+          </form>
+          <!-- /.contact-form -->
+        </div>
+        <!-- /.contacts -->
+      </section>
+      <!-- /#contacts.section section-contacts -->
     </div>
     <!-- /.container -->
   </main>
@@ -177,7 +239,23 @@
   </div>
   <!-- /#modal2.modal -->
 
-  <div class="modal" id="modal3">
+  <div class="modal" id="modalThanksForMail">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Спасибо</h4>
+        <!-- /.modal-title -->
+        <div class="modal-close">x</div>
+        <!-- /.modal-close -->
+      </div>
+      <!-- /.modal-header -->
+      <div class="modal-body">Благодарим за ваше письмо, ваш номер в списке: <span id="mailListId"></span></div>
+      <!-- /.modal-body -->
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /#modal3.modal -->
+
+  <div class="modal" id="modal4">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title"></h4>
@@ -191,10 +269,10 @@
     </div>
     <!-- /.modal-content -->
   </div>
-  <!-- /#modal3.modal -->
+  <!-- /#modal4.modal -->
 
   <!-- /.modals -->
 
-  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/index.min.js"></script>
 </body>
 </html>
