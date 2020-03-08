@@ -20,6 +20,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <!-- Slick -->
+  <link href="./assets/css/slick.css" rel="stylesheet">
+  <link href="./assets/css/slick-theme.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/swiper.min.css">
   <link rel="stylesheet" href="./assets/css/style.min.css">
   <title>Tattoo Mania</title>
@@ -128,7 +131,7 @@
           </div>
           <div class="service">
             <img src="./assets/img/services/removing.png" alt="" class="service__img">
-            <button class="service__text" data-action="open-service" data-service="removing" data-title="Удаление" data-hovertext="Текст">Удаление</button>
+            <button class="service__text" data-action="open-service" data-service="removing" data-title="Удаление" data-hovertext="Если все-таки решился">Удаление</button>
           </div>
           <div class="service">
             <img src="./assets/img/services/correcting.png" alt="" class="service__img">
@@ -144,9 +147,9 @@
 
         <div class="gallery">
           <div class="gallery-header">
-            <img src="./assets/img/arrow-left.svg" alt="" class="service-arrow">
+            <img src="./assets/img/arrow-left.svg" alt="" class="service-arrow service-arrow-left" data-id="">
             <h5 class="service-name" id="serviceName">tattoo</h5>
-            <img src="./assets/img/arrow-right.svg" alt="" class="service-arrow">
+            <img src="./assets/img/arrow-right.svg" alt="" class="service-arrow service-arrow-right" data-id="">
             <!-- /.service-name -->
           </div>
           <!-- /.gallery-header -->
@@ -154,17 +157,19 @@
             <div class="master">
               <img src="./assets/img/masters/ksenia.png" alt="" class="master-image" id="masterImage">
               <div class="master-controls">
-                <img src="./assets/img/arrow-left.svg" alt="" class="master-arrow">
+                <img src="./assets/img/arrow-left.svg" alt="" class="master-arrow master-arrow-left" data-id="">
                 <h6 class="master-name" id="masterName">ksenie</h6>
                 <!-- /.master-name -->
-                <img src="./assets/img/arrow-right.svg" alt="" class="master-arrow">
+                <img src="./assets/img/arrow-right.svg" alt="" class="master-arrow master-arrow-right" data-id="">
               </div>
               <!-- /.master-controls -->
               <span class="master-skills" id="masterSkills">skills</span>
               <!-- /.master-skills -->
             </div>
             <!-- /.master -->
-            <div class="gallery-work" id="galleryWork"></div>
+            <div class="wrapper">
+              <div class="gallery-work" id="galleryWork"></div>
+            </div>
             <!-- /.gallery-work -->
           </div>
         </div>
@@ -348,6 +353,11 @@
 
   <!-- /.modals -->
 
+<!-- Slick -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>
+  <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/swiper.min.js"></script>
   <script src="./assets/js/index.min.js"></script>
 </body>
